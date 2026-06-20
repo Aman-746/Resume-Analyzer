@@ -1,0 +1,254 @@
+.analysis-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.analysis-header {
+  background: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.analysis-header h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.analysis-header p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.analysis-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 40px;
+}
+
+.analysis-card,
+.info-card,
+.score-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.analysis-card {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.analysis-card h3 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.analysis-card p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ATS SCORE CARD */
+
+.score-card {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.score-card h3 {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.score-card h1 {
+  margin: 12px 0 0;
+  font-size: 64px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* GRID */
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* INFO CARDS */
+
+.info-card h4 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.info-card p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.info-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.info-card li {
+  margin-bottom: 10px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* BUTTONS */
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.primary-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.secondary-btn:hover {
+  background: #d1d5db;
+}
+
+/* LOADING STATE */
+
+.loading-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+
+.point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.point-item {
+  padding: 14px;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.strength {
+  background: #ecfdf5;
+  border-left: 4px solid #10b981;
+}
+
+.weakness {
+  background: #fff7ed;
+  border-left: 4px solid #f97316;
+}
+
+.suggestion {
+  background: #eff6ff;
+  border-left: 4px solid #2563eb;
+}
+
+.summary-card {
+  margin-top: 24px;
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.summary-card h3 {
+  margin-top: 0;
+}
+
+.summary-card p {
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.score-label {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .analysis-header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .analysis-content {
+    padding: 24px;
+  }
+
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .score-card h1 {
+    font-size: 48px;
+  }
+
+  .secondary-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .analysis-content {
+    padding: 16px;
+  }
+
+  .analysis-card,
+  .info-card,
+  .score-card {
+    padding: 18px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .score-card h1 {
+    font-size: 40px;
+  }
+}

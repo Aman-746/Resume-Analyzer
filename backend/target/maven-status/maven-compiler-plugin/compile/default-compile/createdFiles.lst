@@ -1,0 +1,9 @@
+com/resumeanalyzer/backend/dto/LoginRequest.class
+com/resumeanalyzer/backend/dto/RegisterRequest.class
+com/resumeanalyzer/backend/service/AuthService.class
+com/resumeanalyzer/backend/controller/AuthController.class
+com/resumeanalyzer/backend/entity/User$UserBuilder.class
+com/resumeanalyzer/backend/entity/User.class
+com/resumeanalyzer/backend/config/SecurityConfig.class
+com/resumeanalyzer/backend/repository/UserRepository.class
+com/resumeanalyzer/backend/BackendApplication.class
